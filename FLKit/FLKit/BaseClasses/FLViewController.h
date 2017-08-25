@@ -10,4 +10,6 @@
 
 @interface FLViewController : UIViewController
 
+@property(nonatomic,strong) UITableView *tableView;
+
 @end

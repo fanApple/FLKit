@@ -8,7 +8,7 @@
 
 #import "FLViewController.h"
 
-@interface FLViewController ()
+@interface FLViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
 
@@ -18,6 +18,36 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:self.tableView];
+}
+
+- (UITableView *)tableView {
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) style:UITableViewStylePlain];
+        _tableView.mj_header= [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+            [self loadData];
+        }];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        _tableView.backgroundColor = [UIColor whiteColor];
+        _tableView.tableFooterView = [UIView new];
+    }
+    return _tableView;
+}
+
+- (void)loadData {
+
+}
+
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 0;
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 0;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return nil;
 }
 
 - (void)didReceiveMemoryWarning {

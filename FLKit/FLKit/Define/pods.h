@@ -10,5 +10,6 @@
 #define pods_h
 
 #import "MJRefresh.h"
+#import "YYKit.h"
 
 #endif /* pods_h */

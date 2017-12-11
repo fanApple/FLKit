@@ -12,4 +12,7 @@
 
 @property(nonatomic,strong) UITableView *tableView;
 
+@property(nonatomic,strong) NSString *strName;
+
+@property(nonatomic,copy) NSString *cpyName;
 @end

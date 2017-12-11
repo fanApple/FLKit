@@ -11,12 +11,17 @@
 		D327A8AF1F3DD6EF00BC4E48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D327A8AD1F3DD6EF00BC4E48 /* Main.storyboard */; };
 		D327A8B11F3DD6EF00BC4E48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D327A8B01F3DD6EF00BC4E48 /* Assets.xcassets */; };
 		D327A8B41F3DD6EF00BC4E48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D327A8B21F3DD6EF00BC4E48 /* LaunchScreen.storyboard */; };
+		D32B4FEF1F614FEA00CF19EC /* FLBaseBody.m in Sources */ = {isa = PBXBuildFile; fileRef = D32B4FEE1F614FEA00CF19EC /* FLBaseBody.m */; };
+		D32B4FF21F61500700CF19EC /* FLTextBody.m in Sources */ = {isa = PBXBuildFile; fileRef = D32B4FF11F61500700CF19EC /* FLTextBody.m */; };
+		D32B4FF51F61501900CF19EC /* FLImageBody.m in Sources */ = {isa = PBXBuildFile; fileRef = D32B4FF41F61501900CF19EC /* FLImageBody.m */; };
+		D32B4FF81F6150E400CF19EC /* FLMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D32B4FF71F6150E400CF19EC /* FLMessage.m */; };
 		D3648A7D1F44784E0071DFA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3648A7A1F44784E0071DFA0 /* AppDelegate.m */; };
 		D3648A7F1F44784E0071DFA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3648A7C1F44784E0071DFA0 /* main.m */; };
 		D3648A811F4478B70071DFA0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3648A801F4478B70071DFA0 /* Info.plist */; };
 		D36AB3A31F5016BD002D51A0 /* UIView+FLAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D36AB3A21F5016BD002D51A0 /* UIView+FLAdd.m */; };
 		D36AB3A61F5017AF002D51A0 /* NSString+FLAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D36AB3A51F5017AF002D51A0 /* NSString+FLAdd.m */; };
 		D36AB3A91F5017ED002D51A0 /* NSDictionary+FLAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D36AB3A81F5017ED002D51A0 /* NSDictionary+FLAdd.m */; };
+		D3B8D8051F53F8BC00F1FF8C /* FLAuthorizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B8D8041F53F8BC00F1FF8C /* FLAuthorizationManager.m */; };
 		D3C0E7301F45C4630084B953 /* FLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C0E72F1F45C4630084B953 /* FLNavigationController.m */; };
 		D3C0E7331F45C4D40084B953 /* FLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C0E7321F45C4D40084B953 /* FLViewController.m */; };
 /* End PBXBuildFile section */
@@ -29,6 +34,14 @@
 		D327A8AE1F3DD6EF00BC4E48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D327A8B01F3DD6EF00BC4E48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D327A8B31F3DD6EF00BC4E48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D32B4FED1F614FEA00CF19EC /* FLBaseBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLBaseBody.h; sourceTree = "<group>"; };
+		D32B4FEE1F614FEA00CF19EC /* FLBaseBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLBaseBody.m; sourceTree = "<group>"; };
+		D32B4FF01F61500700CF19EC /* FLTextBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTextBody.h; sourceTree = "<group>"; };
+		D32B4FF11F61500700CF19EC /* FLTextBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTextBody.m; sourceTree = "<group>"; };
+		D32B4FF31F61501900CF19EC /* FLImageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLImageBody.h; sourceTree = "<group>"; };
+		D32B4FF41F61501900CF19EC /* FLImageBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLImageBody.m; sourceTree = "<group>"; };
+		D32B4FF61F6150E400CF19EC /* FLMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLMessage.h; sourceTree = "<group>"; };
+		D32B4FF71F6150E400CF19EC /* FLMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLMessage.m; sourceTree = "<group>"; };
 		D3648A791F44784E0071DFA0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D3648A7A1F44784E0071DFA0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D3648A7C1F44784E0071DFA0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,6 +54,8 @@
 		D36AB3A81F5017ED002D51A0 /* NSDictionary+FLAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FLAdd.m"; sourceTree = "<group>"; };
 		D36AB3B61F503EFC002D51A0 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		D36AB3B71F50411B002D51A0 /* pods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pods.h; sourceTree = "<group>"; };
+		D3B8D8031F53F8BC00F1FF8C /* FLAuthorizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAuthorizationManager.h; sourceTree = "<group>"; };
+		D3B8D8041F53F8BC00F1FF8C /* FLAuthorizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAuthorizationManager.m; sourceTree = "<group>"; };
 		D3C0E72D1F45C3D60084B953 /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
 		D3C0E72E1F45C4630084B953 /* FLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLNavigationController.h; sourceTree = "<group>"; };
 		D3C0E72F1F45C4630084B953 /* FLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLNavigationController.m; sourceTree = "<group>"; };
@@ -136,6 +151,8 @@
 		D36AB39A1F5015DD002D51A0 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				D3B8D8031F53F8BC00F1FF8C /* FLAuthorizationManager.h */,
+				D3B8D8041F53F8BC00F1FF8C /* FLAuthorizationManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -281,6 +298,14 @@
 		D3C0E7291F45C3610084B953 /* Conversation */ = {
 			isa = PBXGroup;
 			children = (
+				D32B4FF31F61501900CF19EC /* FLImageBody.h */,
+				D32B4FF41F61501900CF19EC /* FLImageBody.m */,
+				D32B4FF01F61500700CF19EC /* FLTextBody.h */,
+				D32B4FF11F61500700CF19EC /* FLTextBody.m */,
+				D32B4FED1F614FEA00CF19EC /* FLBaseBody.h */,
+				D32B4FEE1F614FEA00CF19EC /* FLBaseBody.m */,
+				D32B4FF61F6150E400CF19EC /* FLMessage.h */,
+				D32B4FF71F6150E400CF19EC /* FLMessage.m */,
 			);
 			path = Conversation;
 			sourceTree = "<group>";
@@ -431,12 +456,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D32B4FF21F61500700CF19EC /* FLTextBody.m in Sources */,
+				D32B4FEF1F614FEA00CF19EC /* FLBaseBody.m in Sources */,
 				D3648A7D1F44784E0071DFA0 /* AppDelegate.m in Sources */,
+				D3B8D8051F53F8BC00F1FF8C /* FLAuthorizationManager.m in Sources */,
 				D3648A7F1F44784E0071DFA0 /* main.m in Sources */,
+				D32B4FF81F6150E400CF19EC /* FLMessage.m in Sources */,
 				D3C0E7331F45C4D40084B953 /* FLViewController.m in Sources */,
 				D36AB3A31F5016BD002D51A0 /* UIView+FLAdd.m in Sources */,
 				D36AB3A91F5017ED002D51A0 /* NSDictionary+FLAdd.m in Sources */,
 				D3C0E7301F45C4630084B953 /* FLNavigationController.m in Sources */,
+				D32B4FF51F61501900CF19EC /* FLImageBody.m in Sources */,
 				D36AB3A61F5017AF002D51A0 /* NSString+FLAdd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -559,6 +589,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JC854K845H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FLKit",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = FLKit/PrefixHeader.pch;
 				INFOPLIST_FILE = FLKit/Info.plist;
@@ -575,6 +609,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JC854K845H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FLKit",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = FLKit/PrefixHeader.pch;
 				INFOPLIST_FILE = FLKit/Info.plist;

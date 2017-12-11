@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "begin submit ..."
+echo "----------begin submit----------"
 echo "git add ."
 git add .
 echo "please input commit:"

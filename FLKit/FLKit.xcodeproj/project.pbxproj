@@ -15,6 +15,12 @@
 		D32B4FF21F61500700CF19EC /* FLTextBody.m in Sources */ = {isa = PBXBuildFile; fileRef = D32B4FF11F61500700CF19EC /* FLTextBody.m */; };
 		D32B4FF51F61501900CF19EC /* FLImageBody.m in Sources */ = {isa = PBXBuildFile; fileRef = D32B4FF41F61501900CF19EC /* FLImageBody.m */; };
 		D32B4FF81F6150E400CF19EC /* FLMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D32B4FF71F6150E400CF19EC /* FLMessage.m */; };
+		D3503F6C1FE05393002C68FF /* UIViewController+FLADD.m in Sources */ = {isa = PBXBuildFile; fileRef = D3503F6B1FE05393002C68FF /* UIViewController+FLADD.m */; };
+		D3562A2B1FE93A620097B8A3 /* 180.png in Resources */ = {isa = PBXBuildFile; fileRef = D3562A2A1FE93A620097B8A3 /* 180.png */; };
+		D3562A311FEA811E0097B8A3 /* FLFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3562A301FEA811E0097B8A3 /* FLFriendsViewController.m */; };
+		D3562A361FEB88360097B8A3 /* FLRuntimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D3562A351FEB88360097B8A3 /* FLRuntimeVC.m */; };
+		D3562A391FEB9AC80097B8A3 /* NSObject+FLAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D3562A381FEB9AC80097B8A3 /* NSObject+FLAdd.m */; };
+		D3562A3E1FED07500097B8A3 /* FLThreadLock.m in Sources */ = {isa = PBXBuildFile; fileRef = D3562A3D1FED07500097B8A3 /* FLThreadLock.m */; };
 		D3648A7D1F44784E0071DFA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3648A7A1F44784E0071DFA0 /* AppDelegate.m */; };
 		D3648A7F1F44784E0071DFA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3648A7C1F44784E0071DFA0 /* main.m */; };
 		D3648A811F4478B70071DFA0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3648A801F4478B70071DFA0 /* Info.plist */; };
@@ -42,6 +48,17 @@
 		D32B4FF41F61501900CF19EC /* FLImageBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLImageBody.m; sourceTree = "<group>"; };
 		D32B4FF61F6150E400CF19EC /* FLMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLMessage.h; sourceTree = "<group>"; };
 		D32B4FF71F6150E400CF19EC /* FLMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLMessage.m; sourceTree = "<group>"; };
+		D3503F6A1FE05393002C68FF /* UIViewController+FLADD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FLADD.h"; sourceTree = "<group>"; };
+		D3503F6B1FE05393002C68FF /* UIViewController+FLADD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FLADD.m"; sourceTree = "<group>"; };
+		D3562A2A1FE93A620097B8A3 /* 180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 180.png; sourceTree = "<group>"; };
+		D3562A2F1FEA811E0097B8A3 /* FLFriendsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLFriendsViewController.h; sourceTree = "<group>"; };
+		D3562A301FEA811E0097B8A3 /* FLFriendsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLFriendsViewController.m; sourceTree = "<group>"; };
+		D3562A341FEB88360097B8A3 /* FLRuntimeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLRuntimeVC.h; sourceTree = "<group>"; };
+		D3562A351FEB88360097B8A3 /* FLRuntimeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLRuntimeVC.m; sourceTree = "<group>"; };
+		D3562A371FEB9AC80097B8A3 /* NSObject+FLAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+FLAdd.h"; sourceTree = "<group>"; };
+		D3562A381FEB9AC80097B8A3 /* NSObject+FLAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FLAdd.m"; sourceTree = "<group>"; };
+		D3562A3C1FED07500097B8A3 /* FLThreadLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLThreadLock.h; sourceTree = "<group>"; };
+		D3562A3D1FED07500097B8A3 /* FLThreadLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLThreadLock.m; sourceTree = "<group>"; };
 		D3648A791F44784E0071DFA0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D3648A7A1F44784E0071DFA0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D3648A7C1F44784E0071DFA0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -129,6 +146,7 @@
 		D327A8A41F3DD6EF00BC4E48 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D3562A2A1FE93A620097B8A3 /* 180.png */,
 				D36AB3B61F503EFC002D51A0 /* PrefixHeader.pch */,
 				D3648A801F4478B70071DFA0 /* Info.plist */,
 				D327A8AD1F3DD6EF00BC4E48 /* Main.storyboard */,
@@ -136,6 +154,17 @@
 				D327A8B21F3DD6EF00BC4E48 /* LaunchScreen.storyboard */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3562A331FEB88200097B8A3 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				D3562A341FEB88360097B8A3 /* FLRuntimeVC.h */,
+				D3562A351FEB88360097B8A3 /* FLRuntimeVC.m */,
+				D3562A3C1FED07500097B8A3 /* FLThreadLock.h */,
+				D3562A3D1FED07500097B8A3 /* FLThreadLock.m */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 		D3648A781F44784E0071DFA0 /* Main */ = {
@@ -168,12 +197,16 @@
 		D36AB3A01F5016BD002D51A0 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				D3562A371FEB9AC80097B8A3 /* NSObject+FLAdd.h */,
+				D3562A381FEB9AC80097B8A3 /* NSObject+FLAdd.m */,
 				D36AB3A11F5016BD002D51A0 /* UIView+FLAdd.h */,
 				D36AB3A21F5016BD002D51A0 /* UIView+FLAdd.m */,
 				D36AB3A41F5017AF002D51A0 /* NSString+FLAdd.h */,
 				D36AB3A51F5017AF002D51A0 /* NSString+FLAdd.m */,
 				D36AB3A71F5017ED002D51A0 /* NSDictionary+FLAdd.h */,
 				D36AB3A81F5017ED002D51A0 /* NSDictionary+FLAdd.m */,
+				D3503F6A1FE05393002C68FF /* UIViewController+FLADD.h */,
+				D3503F6B1FE05393002C68FF /* UIViewController+FLADD.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -260,6 +293,7 @@
 		D3C0E7251F45C2610084B953 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D3562A331FEB88200097B8A3 /* Others */,
 				D3C0E7291F45C3610084B953 /* Conversation */,
 				D3C0E72A1F45C3610084B953 /* Friends */,
 				D3C0E72B1F45C3610084B953 /* Now */,
@@ -313,6 +347,8 @@
 		D3C0E72A1F45C3610084B953 /* Friends */ = {
 			isa = PBXGroup;
 			children = (
+				D3562A2F1FEA811E0097B8A3 /* FLFriendsViewController.h */,
+				D3562A301FEA811E0097B8A3 /* FLFriendsViewController.m */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -394,6 +430,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3562A2B1FE93A620097B8A3 /* 180.png in Resources */,
 				D3648A811F4478B70071DFA0 /* Info.plist in Resources */,
 				D327A8B41F3DD6EF00BC4E48 /* LaunchScreen.storyboard in Resources */,
 				D327A8B11F3DD6EF00BC4E48 /* Assets.xcassets in Resources */,
@@ -457,11 +494,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D32B4FF21F61500700CF19EC /* FLTextBody.m in Sources */,
+				D3503F6C1FE05393002C68FF /* UIViewController+FLADD.m in Sources */,
+				D3562A311FEA811E0097B8A3 /* FLFriendsViewController.m in Sources */,
+				D3562A3E1FED07500097B8A3 /* FLThreadLock.m in Sources */,
 				D32B4FEF1F614FEA00CF19EC /* FLBaseBody.m in Sources */,
 				D3648A7D1F44784E0071DFA0 /* AppDelegate.m in Sources */,
 				D3B8D8051F53F8BC00F1FF8C /* FLAuthorizationManager.m in Sources */,
 				D3648A7F1F44784E0071DFA0 /* main.m in Sources */,
+				D3562A361FEB88360097B8A3 /* FLRuntimeVC.m in Sources */,
 				D32B4FF81F6150E400CF19EC /* FLMessage.m in Sources */,
+				D3562A391FEB9AC80097B8A3 /* NSObject+FLAdd.m in Sources */,
 				D3C0E7331F45C4D40084B953 /* FLViewController.m in Sources */,
 				D36AB3A31F5016BD002D51A0 /* UIView+FLAdd.m in Sources */,
 				D36AB3A91F5017ED002D51A0 /* NSDictionary+FLAdd.m in Sources */,
@@ -593,6 +635,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/FLKit",
 				);
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = FLKit/PrefixHeader.pch;
 				INFOPLIST_FILE = FLKit/Info.plist;
@@ -613,6 +656,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/FLKit",
 				);
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = FLKit/PrefixHeader.pch;
 				INFOPLIST_FILE = FLKit/Info.plist;

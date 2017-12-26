@@ -14,6 +14,9 @@ typedef NS_ENUM(NSUInteger, HDBodyType) {
 };
 
 @interface FLBaseBody : NSObject
+
+@property (nonatomic,copy) NSString  *name;
+
 @property(nonatomic,assign) HDBodyType type;
 
 - (void)testtest;

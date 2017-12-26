@@ -8,7 +8,9 @@
 
 #import "FLBaseBody.h"
 
+
 @implementation FLBaseBody
+
 
 - (instancetype)init
 {
@@ -18,7 +20,5 @@
     }
     return self;
 }
-
-
 
 @end

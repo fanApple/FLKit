@@ -19,4 +19,8 @@
 }
 
 
+- (void)test {
+    NSLog(@"success");
+}
+
 @end

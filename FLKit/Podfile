@@ -9,4 +9,5 @@ target 'FLKit' do
   pod 'MJRefresh'
   pod 'KKLog'
   pod 'YYKit'
+  pod 'MLeaksFinder'
 end

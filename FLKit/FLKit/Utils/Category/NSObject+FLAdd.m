@@ -13,6 +13,14 @@
 @implementation NSObject (FLAdd)
 
 
++ (void)load {
+    NSLog(@"nsobject category load");
+}
+
+- (void)test {
+    NSLog(@"object fladd ");
+}
+
 - (Class)getKVOClassWithOriginClassName:(NSString *)originClassName {
     NSString *kvoClassName = [kvoPrefix stringByAppendingString:originClassName];
     Class cls = NSClassFromString(kvoClassName);
@@ -75,6 +83,7 @@
     return setter;
     
 }
+
 
 - (NSString *)getterForSetter:(NSString *)key
 {

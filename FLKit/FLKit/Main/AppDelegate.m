@@ -9,6 +9,11 @@
 #import "AppDelegate.h"
 #import "FLNavigationController.h"
 #import "FLViewController.h"
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>
+#import <BaiduMapAPI_Map/BMKMapComponent.h>
+#import <BaiduMapAPI_Location/BMKLocationComponent.h>
+#import <BaiduMapAPI_Utils/BMKUtilsComponent.h>
+
 
 @interface AppDelegate ()
 
@@ -22,9 +27,18 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [[FLNavigationController alloc] initWithRootViewController:[FLViewController new]];
     [self.window makeKeyAndVisible];
+    [self baidu];
     return YES;
 }
 
+- (void)baidu{
+    CLLocationCoordinate2D test = CLLocationCoordinate2DMake(39.90868, 116.3956);
+    //转换 google地图、soso地图、aliyun地图、mapabc地图和amap地图所用坐标至百度坐标
+    NSDictionary* testdic = BMKConvertBaiduCoorFrom(test,BMK_COORDTYPE_COMMON);
+    //转换GPS坐标至百度坐标
+    testdic = BMKConvertBaiduCoorFrom(test,BMK_COORDTYPE_GPS);
+    NSLog(@"x=%@,y=%@",[testdic objectForKey:@"x"],[testdic objectForKey:@"y"]);
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

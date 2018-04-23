@@ -10,8 +10,28 @@
 
 @implementation UIViewController (FLADD)
 
-- (void)viewDidAppear:(BOOL)animated {
-//    NSLog(@"222222%@",self);
+- (void)testQ {
+    NSLog(@"UIViewController category testQ");
 }
+
++ (instancetype)initialize {
+    NSLog(@"initialize 00000");
+    return self;
+}
+
+
++ (void)load {
+    NSLog(@"UIViewController  ,%@",self);
+}
+
+- (instancetype)init {
+//    NSLog(@"333333333333,%@",self);
+    return self;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    NSLog(@"viewDidAppear:222222%@",self);
+}
+
 
 @end

@@ -11,6 +11,7 @@
 #import "FLFriendsViewController.h"
 #import "FLRuntimeVC.h"
 #import "FLThreadLock.h"
+#import "FLBlockViewController.h"
 
 #define count(a) (sizeof(a)/sizeof(a[0]))
 
@@ -18,7 +19,7 @@ typedef void(^blockName)(NSString *name);
 
 #define khref @"<a href"
 
-@interface FLViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface FLViewController ()<UITableViewDelegate,UITableViewDataSource,FriendsDelegate>
 
 @property(nonatomic,strong) UISegmentedControl *seg;
 
@@ -37,8 +38,66 @@ static void initialize_Queue() {
 
 @implementation FLViewController
 
++ (void)load {
+    NSLog(@"flviewcontroller load ");
+}
+
++ (instancetype)initialize {
+    NSLog(@"2222initialize");
+    return self;
+}
+
+- (instancetype)init {
+    if ([super init]) {
+        NSLog(@"4444444444");
+
+        
+        
+    }
+    return self;
+}
+
+- (void)testQ {
+    NSLog(@"testQ");
+    
+    dispatch_queue_t queue = dispatch_queue_create("myQueue", DISPATCH_QUEUE_CONCURRENT);
+    //dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+    
+//    dispatch_async(queue, ^{
+//        NSLog(@"t22222222");
+//        dispatch_sync(dispatch_get_main_queue(), ^{
+//            NSLog(@"t4444444");
+//        });
+//        NSLog(@"t33333");
+//    });
+}
+
+
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:YES];
+    
+    [self testQ];
+    
+    FLFriendsViewController *fr = [[FLFriendsViewController alloc] init];
+    FLFriendsViewController *fr1 = [[FLFriendsViewController alloc] init];
+
+    
+//    [self performSelector:@selector(test) withObject:nil afterDelay:0];
+    FLViewController *obj = [[FLViewController alloc] init];
+    NSObject *ob = [[NSObject alloc] init];
+    
+    BOOL a = [[NSObject class] isMemberOfClass:[NSObject class]]; // 0
+    BOOL b = [[FLViewController class] isMemberOfClass:[FLViewController class]]; // 0
+    BOOL c = [obj isMemberOfClass:[FLViewController class]]; // 1
+    BOOL d = [ob isMemberOfClass:[NSObject class]]; // 1
+    
+    BOOL e = [[NSObject class] isKindOfClass:[NSObject class]]; // 1
+    BOOL f = [[FLViewController class] isKindOfClass:[FLViewController class]]; // 0
+    BOOL g = [obj isKindOfClass:[FLViewController class]]; // 1
+    BOOL h = [ob isKindOfClass:[NSObject class]]; // 1
+    
+    
+    NSLog(@"BOOL:%d %d %d %d %d %d %d %d",a,b,c,d,e,f,g,h);
     
 //    NSLog(@"1111%@",self);
 //    NSString *str = @"abc";
@@ -64,7 +123,41 @@ static void initialize_Queue() {
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _rowNames = @[@"YYLabel",@"NotificationCenter",@"Runtime",@"ThreadLock",@"name"];
+    
+    NSMutableArray *marr = [NSMutableArray arrayWithCapacity:0];
+    [marr addObject:@"12"];
+    
+    NSArray *arr = [marr copy];
+    
+    NSString *str = @"123";
+    NSString *str2 = str.copy;
+    NSMutableString *mstr = str.mutableCopy;
+    [mstr appendString:@"234"];
+    NSString *str3 = str.mutableCopy;
+    
+    
+    _rowNames = @[@"Block",@"NotificationCenter",@"Runtime",@"ThreadLock",@"name"];
+    dispatch_queue_t queue = dispatch_queue_create("abc", DISPATCH_QUEUE_CONCURRENT);
+    
+//    for (int i= 0; i<30; i++) {
+//        dispatch_async(queue, ^{
+//            NSLog(@"**********1");
+//            sleep(1);
+//            dispatch_sync(queue, ^{
+//                sleep(10);
+//                NSLog(@"**********2");
+//                dispatch_sync(queue, ^{
+//                    NSLog(@"**********3");
+//                });
+//            });
+//            NSLog(@"**********4");
+//        });
+//        NSLog(@"**********5");
+//        sleep(5);
+//    }
+//    
+    
+
     
 //
 //    // Do any additional setup after loading the view.
@@ -267,8 +360,14 @@ static void initialize_Queue() {
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     switch (indexPath.row) {
+        case 0: {
+            FLBlockViewController *blockVC = [FLBlockViewController new];
+            [self.navigationController pushViewController:blockVC animated:YES];
+            break;
+        }
         case 1: {
             FLFriendsViewController *friends = [[FLFriendsViewController alloc] init];
+            friends.delegate = self;
             [self.navigationController pushViewController:friends animated:YES];
             break;
         }
@@ -287,6 +386,14 @@ static void initialize_Queue() {
     }
 }
 
+- (void)testDelegate {
+    NSLog(@"123");
+}
+
+- (void)dealloc {
+    NSLog(@"jiangzhushang -- dealloc _%s",__func__);
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellIdentifier = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
@@ -296,6 +403,9 @@ static void initialize_Queue() {
     }
     return cell;
 }
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

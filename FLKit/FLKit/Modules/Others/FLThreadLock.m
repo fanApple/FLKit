@@ -30,8 +30,8 @@
     });
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        sleep(8);
-//        dispatch_semaphore_wait(signal, overTime);
+        sleep(3);
+//        dispatch_semaphore_wait(signal, overTime);   /
 //        NSLog(@"需要线程同步的操作2");
         dispatch_semaphore_signal(signal);
     });

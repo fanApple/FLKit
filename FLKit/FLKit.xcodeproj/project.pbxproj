@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		52061317F962B373E4282401 /* libPods-FLKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D2D8937149A366CA96FE66A /* libPods-FLKit.a */; };
+		D3071F022058D33300E7A2E3 /* FLContext.m in Sources */ = {isa = PBXBuildFile; fileRef = D3071F012058D33300E7A2E3 /* FLContext.m */; };
+		D3071F052058D36F00E7A2E3 /* FLASDK.m in Sources */ = {isa = PBXBuildFile; fileRef = D3071F042058D36F00E7A2E3 /* FLASDK.m */; };
+		D3071F082058D37D00E7A2E3 /* FLBSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = D3071F072058D37D00E7A2E3 /* FLBSDK.m */; };
+		D3071F0B2058D38900E7A2E3 /* FLCSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = D3071F0A2058D38900E7A2E3 /* FLCSDK.m */; };
 		D327A8AF1F3DD6EF00BC4E48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D327A8AD1F3DD6EF00BC4E48 /* Main.storyboard */; };
 		D327A8B11F3DD6EF00BC4E48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D327A8B01F3DD6EF00BC4E48 /* Assets.xcassets */; };
 		D327A8B41F3DD6EF00BC4E48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D327A8B21F3DD6EF00BC4E48 /* LaunchScreen.storyboard */; };
@@ -27,6 +31,9 @@
 		D36AB3A31F5016BD002D51A0 /* UIView+FLAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D36AB3A21F5016BD002D51A0 /* UIView+FLAdd.m */; };
 		D36AB3A61F5017AF002D51A0 /* NSString+FLAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D36AB3A51F5017AF002D51A0 /* NSString+FLAdd.m */; };
 		D36AB3A91F5017ED002D51A0 /* NSDictionary+FLAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D36AB3A81F5017ED002D51A0 /* NSDictionary+FLAdd.m */; };
+		D379FEBC1FF50ECF005C2522 /* FLBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D379FEBB1FF50ECF005C2522 /* FLBlockViewController.m */; };
+		D379FEC21FF63BCB005C2522 /* FLKVC_KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D379FEC11FF63BCB005C2522 /* FLKVC_KVOViewController.m */; };
+		D3B3B6992003CFA9002F51BF /* FLTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B3B6982003CFA9002F51BF /* FLTestViewController.m */; };
 		D3B8D8051F53F8BC00F1FF8C /* FLAuthorizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B8D8041F53F8BC00F1FF8C /* FLAuthorizationManager.m */; };
 		D3C0E7301F45C4630084B953 /* FLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C0E72F1F45C4630084B953 /* FLNavigationController.m */; };
 		D3C0E7331F45C4D40084B953 /* FLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C0E7321F45C4D40084B953 /* FLViewController.m */; };
@@ -36,6 +43,15 @@
 		0BF5059584DD378ACB1F2EBB /* Pods-FLKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLKit/Pods-FLKit.debug.xcconfig"; sourceTree = "<group>"; };
 		0D2D8937149A366CA96FE66A /* libPods-FLKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FLKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BD0A49C9CAB4E2EAEC360D5 /* Pods-FLKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-FLKit/Pods-FLKit.release.xcconfig"; sourceTree = "<group>"; };
+		D3071F002058D33300E7A2E3 /* FLContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLContext.h; sourceTree = "<group>"; };
+		D3071F012058D33300E7A2E3 /* FLContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLContext.m; sourceTree = "<group>"; };
+		D3071F032058D36F00E7A2E3 /* FLASDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLASDK.h; sourceTree = "<group>"; };
+		D3071F042058D36F00E7A2E3 /* FLASDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLASDK.m; sourceTree = "<group>"; };
+		D3071F062058D37D00E7A2E3 /* FLBSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLBSDK.h; sourceTree = "<group>"; };
+		D3071F072058D37D00E7A2E3 /* FLBSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLBSDK.m; sourceTree = "<group>"; };
+		D3071F092058D38900E7A2E3 /* FLCSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLCSDK.h; sourceTree = "<group>"; };
+		D3071F0A2058D38900E7A2E3 /* FLCSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLCSDK.m; sourceTree = "<group>"; };
+		D3071F0C2058D43C00E7A2E3 /* FLSDKDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLSDKDelegate.h; sourceTree = "<group>"; };
 		D327A8A11F3DD6EF00BC4E48 /* FLKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D327A8AE1F3DD6EF00BC4E48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D327A8B01F3DD6EF00BC4E48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +87,12 @@
 		D36AB3A81F5017ED002D51A0 /* NSDictionary+FLAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FLAdd.m"; sourceTree = "<group>"; };
 		D36AB3B61F503EFC002D51A0 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		D36AB3B71F50411B002D51A0 /* pods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pods.h; sourceTree = "<group>"; };
+		D379FEBA1FF50ECF005C2522 /* FLBlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLBlockViewController.h; sourceTree = "<group>"; };
+		D379FEBB1FF50ECF005C2522 /* FLBlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLBlockViewController.m; sourceTree = "<group>"; };
+		D379FEC01FF63BCB005C2522 /* FLKVC_KVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLKVC_KVOViewController.h; sourceTree = "<group>"; };
+		D379FEC11FF63BCB005C2522 /* FLKVC_KVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLKVC_KVOViewController.m; sourceTree = "<group>"; };
+		D3B3B6972003CFA8002F51BF /* FLTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLTestViewController.h; sourceTree = "<group>"; };
+		D3B3B6982003CFA9002F51BF /* FLTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLTestViewController.m; sourceTree = "<group>"; };
 		D3B8D8031F53F8BC00F1FF8C /* FLAuthorizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAuthorizationManager.h; sourceTree = "<group>"; };
 		D3B8D8041F53F8BC00F1FF8C /* FLAuthorizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAuthorizationManager.m; sourceTree = "<group>"; };
 		D3C0E72D1F45C3D60084B953 /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
@@ -107,6 +129,30 @@
 				3BD0A49C9CAB4E2EAEC360D5 /* Pods-FLKit.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		D3071EFE2058D2B700E7A2E3 /* DesignPatterns */ = {
+			isa = PBXGroup;
+			children = (
+				D3071EFF2058D2D800E7A2E3 /* Strategy(策略模式) */,
+			);
+			path = DesignPatterns;
+			sourceTree = "<group>";
+		};
+		D3071EFF2058D2D800E7A2E3 /* Strategy(策略模式) */ = {
+			isa = PBXGroup;
+			children = (
+				D3071F002058D33300E7A2E3 /* FLContext.h */,
+				D3071F012058D33300E7A2E3 /* FLContext.m */,
+				D3071F032058D36F00E7A2E3 /* FLASDK.h */,
+				D3071F042058D36F00E7A2E3 /* FLASDK.m */,
+				D3071F062058D37D00E7A2E3 /* FLBSDK.h */,
+				D3071F072058D37D00E7A2E3 /* FLBSDK.m */,
+				D3071F092058D38900E7A2E3 /* FLCSDK.h */,
+				D3071F0A2058D38900E7A2E3 /* FLCSDK.m */,
+				D3071F0C2058D43C00E7A2E3 /* FLSDKDelegate.h */,
+			);
+			path = "Strategy(策略模式)";
 			sourceTree = "<group>";
 		};
 		D327A8981F3DD6EF00BC4E48 = {
@@ -160,9 +206,15 @@
 			isa = PBXGroup;
 			children = (
 				D3562A341FEB88360097B8A3 /* FLRuntimeVC.h */,
+				D379FEC01FF63BCB005C2522 /* FLKVC_KVOViewController.h */,
+				D379FEC11FF63BCB005C2522 /* FLKVC_KVOViewController.m */,
 				D3562A351FEB88360097B8A3 /* FLRuntimeVC.m */,
 				D3562A3C1FED07500097B8A3 /* FLThreadLock.h */,
 				D3562A3D1FED07500097B8A3 /* FLThreadLock.m */,
+				D379FEBA1FF50ECF005C2522 /* FLBlockViewController.h */,
+				D379FEBB1FF50ECF005C2522 /* FLBlockViewController.m */,
+				D3B3B6972003CFA8002F51BF /* FLTestViewController.h */,
+				D3B3B6982003CFA9002F51BF /* FLTestViewController.m */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -279,6 +331,7 @@
 		D36AB3B21F5019FE002D51A0 /* OC */ = {
 			isa = PBXGroup;
 			children = (
+				D3071EFE2058D2B700E7A2E3 /* DesignPatterns */,
 			);
 			path = OC;
 			sourceTree = "<group>";
@@ -494,21 +547,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				D32B4FF21F61500700CF19EC /* FLTextBody.m in Sources */,
+				D3071F022058D33300E7A2E3 /* FLContext.m in Sources */,
 				D3503F6C1FE05393002C68FF /* UIViewController+FLADD.m in Sources */,
 				D3562A311FEA811E0097B8A3 /* FLFriendsViewController.m in Sources */,
 				D3562A3E1FED07500097B8A3 /* FLThreadLock.m in Sources */,
 				D32B4FEF1F614FEA00CF19EC /* FLBaseBody.m in Sources */,
 				D3648A7D1F44784E0071DFA0 /* AppDelegate.m in Sources */,
 				D3B8D8051F53F8BC00F1FF8C /* FLAuthorizationManager.m in Sources */,
+				D3071F082058D37D00E7A2E3 /* FLBSDK.m in Sources */,
 				D3648A7F1F44784E0071DFA0 /* main.m in Sources */,
+				D3071F0B2058D38900E7A2E3 /* FLCSDK.m in Sources */,
 				D3562A361FEB88360097B8A3 /* FLRuntimeVC.m in Sources */,
+				D3071F052058D36F00E7A2E3 /* FLASDK.m in Sources */,
 				D32B4FF81F6150E400CF19EC /* FLMessage.m in Sources */,
+				D3B3B6992003CFA9002F51BF /* FLTestViewController.m in Sources */,
 				D3562A391FEB9AC80097B8A3 /* NSObject+FLAdd.m in Sources */,
+				D379FEC21FF63BCB005C2522 /* FLKVC_KVOViewController.m in Sources */,
 				D3C0E7331F45C4D40084B953 /* FLViewController.m in Sources */,
 				D36AB3A31F5016BD002D51A0 /* UIView+FLAdd.m in Sources */,
 				D36AB3A91F5017ED002D51A0 /* NSDictionary+FLAdd.m in Sources */,
 				D3C0E7301F45C4630084B953 /* FLNavigationController.m in Sources */,
 				D32B4FF51F61501900CF19EC /* FLImageBody.m in Sources */,
+				D379FEBC1FF50ECF005C2522 /* FLBlockViewController.m in Sources */,
 				D36AB3A61F5017AF002D51A0 /* NSString+FLAdd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,4 +10,5 @@ target 'FLKit' do
   pod 'KKLog'
   pod 'YYKit'
   pod 'MLeaksFinder'
+  pod 'BaiduMapKit'
 end

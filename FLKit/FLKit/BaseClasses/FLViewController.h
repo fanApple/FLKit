@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @interface FLViewController : UIViewController
 
 @property(nonatomic,strong) UITableView *tableView;
@@ -15,4 +14,5 @@
 @property(nonatomic,strong) NSString *strName;
 
 @property(nonatomic,copy) NSString *cpyName;
+- (void)testQ;
 @end

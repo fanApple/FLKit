@@ -10,37 +10,76 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 #import "FLMessage.h"
+#import "FLContext.h"
+#import "FLASDK.h"
+#import "FLBSDK.h"
+#import "FLCSDK.h"
 
-@interface FLFriendsViewController ()
+@interface FLFriendsViewController () 
 
 @end
 
 @implementation FLFriendsViewController
 
++(void)initialize {
+    NSLog(@"%s initialize",__func__);
+}
+
++ (void)load {
+    NSLog(@"load load load load");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    NSString *result = @"000";
+    FLContext *context1 = [[FLContext alloc] initWithTarget:[[FLASDK alloc] initWithAppkey:@"appkey"]];
+    result = [context1 getResult];
+    NSLog(@"result1 :%@",result);
     
-    FLImageBody *img = [[FLImageBody alloc] init];
+    FLContext *context2 = [[FLContext alloc] initWithTarget:[[FLBSDK alloc] initWithName:@"name"]];
+    result = [context2 getResult];
+    NSLog(@"result2 :%@",result);
     
-    FLTextBody *text = [[FLTextBody alloc] initWithText:@"caocao"];
+    FLContext *context3 = [[FLContext alloc] initWithTarget:[[FLCSDK alloc] initWithDate:[NSDate date]]];
+    result = [context3 getResult];
+    NSLog(@"result3 :%@",result);
+    
+//    FLImageBody *img = [[FLImageBody alloc] init];
+//
+//    FLTextBody *text = [[FLTextBody alloc] initWithText:@"caocao"];
     
     
     self.view.backgroundColor = [UIColor lightGrayColor];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(newSession) name:@"newSession" object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(newSession) name:@"newSession" object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserverForName:@"" object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
+//
+//    }];
     
-    MJWeakSelf
-    
-#warning "若使用self 会产生 retain cycle"
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:3 repeats:YES block:^(NSTimer * _Nonnull timer) {
-//        [[NSNotificationCenter defaultCenter] postNotificationName:@"newSession" object:nil];
-        [self newSession];
-    }];
-//    NSLog(@"timer%d: %p",arc4random()%20,timer);
+//    MJWeakSelf
+////
 //    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(newSession) userInfo:nil repeats:YES];
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:30 block:^(NSTimer * _Nonnull timer) {
+        ;
+
+    } repeats:YES];
+////
     [timer fire];
+    
+    
+    
+    
+//#warning "若使用self 会产生 retain cycle"
+//    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:3 repeats:YES block:^(NSTimer * _Nonnull timer) {
+////        [[NSNotificationCenter defaultCenter] postNotificationName:@"newSession" object:nil];
+//        [self newSession];
+//    }];
+////    NSLog(@"timer%d: %p",arc4random()%20,timer);
+////    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(newSession) userInfo:nil repeats:YES];
+//    [timer fire];
 }
+
 
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
@@ -59,6 +98,12 @@
     }
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    if ([_delegate respondsToSelector:@selector(testDelegate)]) {
+        [_delegate testDelegate];
+    }
+}
+
 - (void)newSession {
     NSLog(@"newSession");
 }
@@ -68,7 +113,7 @@
 }
 
 - (void)dealloc {
-    NSLog(@"%s",__func__);
+    NSLog(@"baifayuqiao --- %s",__func__);
 }
 
 - (void)didReceiveMemoryWarning {
